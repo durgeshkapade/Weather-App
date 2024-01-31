@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.warpper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.bg-img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/01n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    object-fit: cover;
+    transition: all 2s ease ;
+    
+}
+.container{
+    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    perspective: 200px;
+    color: #000;
+    border: 6px solid rgba(0, 0, 0, 0.73);
+}
+.main-box{
+    position: relative;
+    height: 600px;
+    width: 620px;
+    /* background: #424d606d; */
+    /* background-color: rgba(134, 125, 125, 0.327); */
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: rgba(25, 23, 23, 0.403) 0px 22px 70px 4px;
+    border: 2px solid rgba(42, 41, 41, 0.491);
+}
+
+.top-box{
+    position: relative;
+    height: 60%;    
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(./images/01n.jpg);
+    background-size: cover;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 43px;
+    box-shadow: rgba(0, 0, 0, 0.31) 0px 22px 70px 4px;
+}
+    
+.top-box .top-left div{ 
+    padding-bottom:23px;
+}
+
+.top-box .top-left .date-time{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px; 
+}
+
+.top-box .top-left .temperature{
+    font-size: 70px;
+}
+
+.top-box .top-left .city{
+    font-size: 30px;
+}
+
+
+.top-box .top-left .input-box input{
+    height: 40px;
+    /* width: 180px; */
+    border-radius: none;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.794);
+    font-size: 28px;
+    padding: 8px;
+    outline: none;
+    overflow: auto;
+    text-decoration: none;
+    /* border-bottom: 2px solid #3399ff;  */
+    /* transition: border-bottom 3s; */
+    /* border-bottom: 0.7px solid rgba(255, 255, 255, 0.418); */
+}
+
+input:focus {
+    border-bottom: 2px solid #ff6600; /* Change to a different color when focused */
+}
+/* ----------- top right */
+
+
+.top-box .top-right {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-box .top-right .weather-icon{
+    height: 170px;
+    width: 170px;
+    & img{
+        height: 100%;
+    }
+}
+
+.weather-discri{
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+
+
+
+/* ---- */
+
+
+.bottom-box{
+    color: #f0f0f0e4;
+    height: 40%;
+    width: 100%;
+    top: 60%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bottom-box div{
+    height: 70px;
+    width: 185px;
+    text-align: center;
+    border-right: 2px solid rgba(150, 150, 150, 0.487);
+    
+    
+}
+
+.bottom-box div:last-child{
+    border-right: none;
+}
+
+.bottom-box span{
+    font-size: 1.7rem;
+
+}
+.bottom-box .decri{
+    line-height: 3px;
+    font-size: 0.9rem;
+}
